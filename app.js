@@ -29,7 +29,7 @@ function crearBarra(id_barra){
     }
 }
 
-//selecciono todas las barras generales par aluego manipularlas
+//selecciono todas las barras generales para luego manipularlas
 let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
@@ -44,7 +44,7 @@ let ilustrator = document.getElementById("ilustrator");
 crearBarra(ilustrator);
 
 //Ahora voy a guardar la cantidad de barritas que se van a ir pintando por cada barar
-//para eso utilizo un arreglo, cada posiciòn pertenece a un elemento
+//para eso utilizo un arreglo, cada posición pertenece a un elemento
 //comienzan en -1 porque no tiene ninguna pintada al iniciarse
 let contadores = [-1,-1,-1,-1,-1,-1];
 //esta variable la voy a utilizar de bandera para saber si ya ejecuto la animación
@@ -57,22 +57,22 @@ function efectoHabilidades(){
     if(distancia_skills>=300 && entro==false){
         entro = true;
         const intervalHtml = setInterval(function(){
-            pintarBarra(html, 16, 0, intervalHtml);
+            pintarBarra(html, 10, 0, intervalHtml);
         },100);
         const intervalJavascript = setInterval(function(){
-            pintarBarra(javascript, 11, 1, intervalJavascript);
+            pintarBarra(javascript, 5, 1, intervalJavascript);
         },100);
         const intervalWordpress = setInterval(function(){
-            pintarBarra(wordpress, 11, 2, intervalWordpress);
+            pintarBarra(wordpress, 5, 2, intervalWordpress);
         },100);
         const intervalPhotoshop = setInterval(function(){
-            pintarBarra(photoshop, 15, 3, intervalPhotoshop);
+            pintarBarra(photoshop, 6, 3, intervalPhotoshop);
         },100);
         const intervalPhp = setInterval(function(){
-            pintarBarra(php, 16, 4, intervalPhp);
+            pintarBarra(php, 8, 4, intervalPhp);
         },100);
         const intervalIlustrator = setInterval(function(){
-            pintarBarra(ilustrator, 11, 5, intervalIlustrator);
+            pintarBarra(ilustrator, 9, 5, intervalIlustrator);
         },100);
     }
 }
